@@ -14,9 +14,7 @@ op_atrib : ATRIB
 op_arit : ARIT
 	;
 pv : PV
-	;
-
-NEWLINE : [\r\n]+ ;
+   ;
 
 INT : [0-9]+
 	;
@@ -32,3 +30,4 @@ ATRIB : '='
 PV : ';'
    ;
 
+WS : [ \t\n\r]+ -> skip;
